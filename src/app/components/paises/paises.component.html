@@ -1,0 +1,19 @@
+<h1>Lista de paises traidos desde una api</h1>
+<table class="table" style="background-color:cornsilk;">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Pais</th>
+            <th scope="col">Poblacion</th>
+            <th scope="col">Capital</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of paises; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{ pais.name }}</td>
+            <td>{{ pais.population | number }}</td>
+            <td>{{ pais.capital }}</td>
+        </tr>
+    </tbody>
+</table>
